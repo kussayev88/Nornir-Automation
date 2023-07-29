@@ -1,0 +1,2414 @@
+2023-07-21 19:25:50,764 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:25:50,864 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:25:50,864 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:32:51,435 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:32:52,682 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:33:59,640 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:33:59,644 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:33:59,644 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:34:01,140 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:34:01,143 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:34:01,144 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:39:19,307 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:39:19,310 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:39:19,311 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:39:20,370 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:39:20,374 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:39:20,374 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:39:21,371 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:39:21,374 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:39:21,375 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:41:42,680 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:41:42,683 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:41:42,684 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:42:03,034 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:42:03,038 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:42:03,038 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:42:04,509 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:42:04,512 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:42:04,513 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:42:05,631 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 19:42:05,635 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 19:42:05,635 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 20:33:16,331 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:33:16,346 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:33:16,346 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:35:27,284 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:35:27,287 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:35:27,289 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:35:28,896 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:35:28,901 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:35:28,901 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:38:41,010 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:38:41,014 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_veos". Is the library installed?
+
+2023-07-21 20:38:41,016 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_veos". Is the library installed?
+
+2023-07-21 20:38:43,980 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:38:43,985 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_veos". Is the library installed?
+
+2023-07-21 20:38:43,987 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_veos". Is the library installed?
+
+2023-07-21 20:39:02,798 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:39:02,802 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:39:02,804 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:39:07,851 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:39:07,855 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:39:07,857 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos". Is the library installed?
+
+2023-07-21 20:39:34,748 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:39:34,750 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 20:39:34,750 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 20:41:24,934 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:41:24,936 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 20:41:24,936 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 20:41:25,836 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:41:25,838 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 20:41:25,838 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 20:46:23,051 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 20:46:23,055 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 20:46:23,056 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\base\__init__.py", line 70, in get_network_driver
+    raise ModuleImportError("Please provide a valid driver name.")
+napalm.base.exceptions.ModuleImportError: Please provide a valid driver name.
+
+2023-07-21 21:41:00,043 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 21:41:02,162 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 57, in open
+    connection.open()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+2023-07-21 21:41:02,163 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 57, in open
+    connection.open()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+2023-07-21 21:43:09,579 -  nornir.core -     INFO -        run() - Running task 'napalm_get' with args {'getters': ['facts', 'interfaces']} on 2 hosts
+2023-07-21 21:43:11,629 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 57, in open
+    connection.open()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+2023-07-21 21:43:11,633 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1281, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1041, in _send_output
+    self.send(msg)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 979, in send
+    self.connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1451, in connect
+    super().connect()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 945, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\pyeapi\eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\tasks\napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_napalm\plugins\connections\__init__.py", line 57, in open
+    connection.open()
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\napalm\eos\eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+2023-07-21 21:44:05,072 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 21:44:05,076 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 21:44:05,076 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\tasks\core\send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir\core\inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\nornir_scrapli\connection.py", line 98, in open
+    connection = Scrapli(**parameters, platform=final_platform)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\factory.py", line 506, in __new__
+    final_conn = final_driver(**final_kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\core\arista_eos\sync_driver.py", line 130, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\network\sync_driver.py", line 48, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\generic\sync_driver.py", line 47, in __init__
+    super().__init__(
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\sync_driver.py", line 15, in __init__
+    super().__init__(**kwargs)
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\driver\base\base_driver.py", line 187, in __init__
+    self.transport = transport_class(
+                     ^^^^^^^^^^^^^^^^
+  File "C:\Users\kussa\AppData\Local\Programs\Python\Python311\Lib\site-packages\scrapli\transport\plugins\system\transport.py", line 60, in __init__
+    raise ScrapliUnsupportedPlatform("system transport is not supported on windows devices")
+scrapli.exceptions.ScrapliUnsupportedPlatform: system transport is not supported on windows devices
+
+2023-07-21 23:27:57,621 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-21 23:27:57,876 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_scrapli/tasks/core/send_config.py", line 58, in send_config
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_scrapli/connection.py", line 105, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/driver/base/sync_driver.py", line 88, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/decorators.py", line 113, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/channel/sync_channel.py", line 288, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/channel/base_channel.py", line 432, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2023-07-21 23:27:57,877 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_config (failed)
+
+
+2023-07-21 23:36:21,041 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'comand': 'show version'} on 2 hosts
+2023-07-21 23:36:21,043 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: send_command() got an unexpected keyword argument 'comand'
+
+2023-07-21 23:36:21,044 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: send_command() got an unexpected keyword argument 'comand'
+
+2023-07-21 23:36:48,665 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 2 hosts
+2023-07-21 23:36:48,745 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_scrapli/tasks/core/send_command.py", line 36, in send_command
+    scrapli_conn = task.host.get_connection("scrapli", task.nornir.config)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_scrapli/connection.py", line 105, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/driver/base/sync_driver.py", line 88, in open
+    self.channel.channel_authenticate_ssh(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/decorators.py", line 216, in decorate
+    return _multiprocessing_timeout(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/decorators.py", line 113, in _multiprocessing_timeout
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/channel/sync_channel.py", line 288, in channel_authenticate_ssh
+    self._ssh_message_handler(output=authenticate_buf)
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/scrapli/channel/base_channel.py", line 432, in _ssh_message_handler
+    raise ScrapliAuthenticationFailed(msg)
+scrapli.exceptions.ScrapliAuthenticationFailed: Host key verification failed
+
+2023-07-21 23:38:11,921 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 2 hosts
+2023-07-21 23:40:08,844 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-22 00:35:43,394 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-22 13:54:14,395 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-22 13:54:14,398 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 13:54:14,399 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 13:56:08,480 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-22 13:56:08,482 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 13:56:08,483 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 13:57:36,526 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-22 13:57:36,527 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 13:57:36,527 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 13:58:10,893 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 2 hosts
+2023-07-22 14:29:27,808 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-22 14:29:27,810 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 14:29:27,810 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/runbook_send_command.py", line 9, in random_config
+    task.run(task=send_config, config="ntp server 8.8.8.8")
+                  ^^^^^^^^^^^
+NameError: name 'send_config' is not defined
+
+2023-07-22 14:30:03,759 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 11:58:40,995 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 2 hosts
+2023-07-27 11:59:15,475 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 13:00:18,603 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:00:43,312 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:01:23,238 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:10:04,149 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:14:03,084 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:14:24,192 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:14:40,397 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:14:51,081 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:15:10,795 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 13:29:12,404 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show run'} on 2 hosts
+2023-07-27 14:25:21,513 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 2 hosts
+2023-07-27 14:28:41,289 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show version'} on 2 hosts
+2023-07-27 14:32:28,410 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show int status'} on 2 hosts
+2023-07-27 15:32:22,332 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 15:32:22,334 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f'ntp server {task.host[ntp_server]}')
+                                                              ^^^^^^^^^^
+NameError: name 'ntp_server' is not defined
+
+2023-07-27 15:32:22,335 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f'ntp server {task.host[ntp_server]}')
+                                                              ^^^^^^^^^^
+NameError: name 'ntp_server' is not defined
+
+2023-07-27 15:50:12,463 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 15:50:12,465 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f'ntp server {task.host[ntp_server]}')
+                                                              ^^^^^^^^^^
+NameError: name 'ntp_server' is not defined
+
+2023-07-27 15:50:12,465 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f'ntp server {task.host[ntp_server]}')
+                                                              ^^^^^^^^^^
+NameError: name 'ntp_server' is not defined
+
+2023-07-27 15:52:13,474 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 16:27:25,087 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 16:53:29,276 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {'command': 'show int status'} on 2 hosts
+2023-07-27 16:58:48,330 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 17:08:04,174 -  nornir.core -     INFO -        run() - Running task 'send_config' with args {'config': 'ntp server 123.123.123.123'} on 2 hosts
+2023-07-27 17:14:16,340 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 18:14:45,867 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 18:14:45,868 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'nornir_scrapli.tasks.core.send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+2023-07-27 18:14:45,870 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: nornir_scrapli.tasks.core.send_config (failed)
+
+
+2023-07-27 18:14:45,870 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'nornir_scrapli.tasks.core.send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+2023-07-27 18:14:45,870 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: nornir_scrapli.tasks.core.send_config (failed)
+
+
+2023-07-27 18:15:15,048 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 18:16:35,240 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 18:16:35,241 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'nornir_scrapli.tasks.core.send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+2023-07-27 18:16:35,242 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'nornir_scrapli.tasks.core.send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'module' object is not callable
+
+2023-07-27 18:16:35,243 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: nornir_scrapli.tasks.core.send_config (failed)
+
+
+2023-07-27 18:16:35,243 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'random_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/ntp_server.py", line 8, in random_config
+    task.run(task=send_config, config=f"ntp server {task.host['ntp_server']}")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: nornir_scrapli.tasks.core.send_config (failed)
+
+
+2023-07-27 18:17:56,639 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 18:57:30,951 -  nornir.core -     INFO -        run() - Running task 'random_config' with args {} on 2 hosts
+2023-07-27 19:06:16,021 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 19:06:17,198 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-07-27 19:06:17,227 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, command=cmd)
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-07-27 19:07:27,224 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 19:09:14,857 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 19:40:51,805 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 19:40:51,806 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, send_commands=command_list)
+                  ^^^^^^^^^^^^
+NameError: name 'send_command' is not defined
+
+2023-07-27 19:40:51,807 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, send_commands=command_list)
+                  ^^^^^^^^^^^^
+NameError: name 'send_command' is not defined
+
+2023-07-27 19:41:20,770 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 19:41:46,567 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 20:05:38,073 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 20:06:00,936 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 20:06:02,098 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, command="ntp server 8.8.8.8")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-07-27 20:06:02,108 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, command="ntp server 8.8.8.8")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-07-27 21:25:33,429 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-07-27 21:25:33,556 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:25:33,557 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:25:33,557 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2023-07-27 21:25:33,558 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2023-07-27 21:26:44,600 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-07-27 21:26:44,618 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:26:44,620 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:26:44,621 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2023-07-27 21:26:44,621 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2023-07-27 21:32:06,731 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-07-27 21:32:06,748 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:32:06,749 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:32:06,750 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2023-07-27 21:32:06,751 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2023-07-27 21:34:27,269 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 21:34:28,391 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, command="ntp server 8.8.8.8")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-07-27 21:34:28,428 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'three_commands' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/three_show_commands", line 9, in three_commands
+    task.run(task=send_command, command="ntp server 8.8.8.8")
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: send_command (failed)
+
+
+2023-07-27 21:34:49,042 -  nornir.core -     INFO -        run() - Running task 'three_commands' with args {} on 2 hosts
+2023-07-27 21:34:57,496 -  nornir.core -     INFO -        run() - Running task 'pull_random_info' with args {} on 2 hosts
+2023-07-27 21:34:57,513 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:34:57,514 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 433, in send
+    self.transport.endheaders(message_body=data)
+  File "/usr/lib/python3.11/http/client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/lib/python3.11/http/client.py", line 1037, in _send_output
+    self.send(msg)
+  File "/usr/lib/python3.11/http/client.py", line 975, in send
+    self.connect()
+  File "/usr/lib/python3.11/http/client.py", line 1447, in connect
+    super().connect()
+  File "/usr/lib/python3.11/http/client.py", line 941, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/socket.py", line 851, in create_connection
+    raise exceptions[0]
+  File "/usr/lib/python3.11/socket.py", line 836, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 223, in open
+    sh_ver = self.device.run_commands(["show version"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/pyeapi_syntax_wrapper.py", line 42, in run_commands
+    return super(Node, self).run_commands(commands, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/client.py", line 887, in run_commands
+    response = self._connection.execute(commands, encoding, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 627, in execute
+    response = self.send(request)
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/pyeapi/eapilib.py", line 471, in send
+    raise ConnectionError(str(self), error_msg)
+pyeapi.eapilib.ConnectionError: Socket error during eAPI connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir_napalm/plugins/connections/__init__.py", line 57, in open
+    connection.open()
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/napalm/eos/eos.py", line 233, in open
+    raise ConnectionException(str(ce))
+napalm.base.exceptions.ConnectionException: Socket error during eAPI connection: [Errno 111] Connection refused
+
+2023-07-27 21:34:57,515 - nornir.core.task -    ERROR -      start() - Host 'switch01': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2023-07-27 21:34:57,515 - nornir.core.task -    ERROR -      start() - Host 'switch02': task 'pull_random_info' failed with traceback:
+Traceback (most recent call last):
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/baur/Nornir-Automation/nornir_napalm1", line 8, in pull_random_info
+    task.run(task=napalm_get, getters=["get_facts"])
+  File "/home/baur/Nornir-Automation/.venv/lib/python3.11/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+

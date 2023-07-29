@@ -1,0 +1,10 @@
+---
+
+   euro_group:
+      username: "cisco"
+      password: "cisco"
+      
+   arista_group:
+      #platform: "arista_veos"
+      data:
+         ntp_server: "8.8.8.8"

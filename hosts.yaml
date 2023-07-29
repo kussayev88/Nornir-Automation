@@ -1,0 +1,21 @@
+---
+
+   switch01:
+      hostname: "192.168.0.211"
+      username: "cisco"
+      password: "cisco"
+      platform: "eos"
+      data:
+         ntp_server: "11.11.11.11"   
+      # groups:
+      #    - arista_group
+         
+   switch02:
+      hostname: "192.168.0.212"
+      username: "cisco"
+      password: "cisco"
+      platform: "eos"
+      data:
+         ntp_server: "22.22.22.22"  
+      # groups:
+      #    - arista_group
